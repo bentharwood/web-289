@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* global css */
+html {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+  background-color: #caba9c;
+}
+
+h1 {
+  font-family: "Lugrasimo", cursive;;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* header css */
+#top_level {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* all links */
+header li {
+  list-style-type: none;
+}
+
+header li a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* user drop down */
+
+/* search */
+
+form {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 2rem;
+  align-items: center;
+}
+
+form img {
+  height: 2rem;
+}
+
+#search,
+#hidden {
+  display: none; /* Hide the search input by default */
+}
+
+#hidden:checked ~ #search {
+  display: block; /* Show the search input when the checkbox is checked */
+}
+
+/* navbar */
+
+nav {
+  border-bottom: 2px solid #000 ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dropdown button {
+  background-color: #10500e;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: .5rem;
+  margin: .5rem;
+  border-radius: 5%;
+  font-size: 1rem;
+}
+
+.dropdown-content {
+  border: 1px solid #000;
+  display: none;
+  position: absolute;
+  background-color: #4d2d18;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  border-top: #4d2d18;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover nav {
+  background-color: #3e8e41;
+}
